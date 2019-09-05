@@ -23,7 +23,7 @@ public class RabbitmqController {
 	emp.setEmpId(empId);
 	emp.setEmpName(empName);
 		rabbitMQSender.send(emp);
-
+		System.out.println("get emp details");
 		return "Message sent to the RabbitMQ JavaInUse Successfully";
 	}
 }
